@@ -1,6 +1,6 @@
 # NOTES
 
-- `python3 -m venv venv` OR `py -3 -m venv venv` **Create an environment*
+- `python3 -m venv venv` OR `py -3 -m venv venv` **Create an environment**
 - `./venv/Scripts/activate` **Activate the environment**
 - `pip install Flask` **Install Flask**
 - `pip install flask-mysqldb` **Install ‘mysqlbd’ module in your venv**

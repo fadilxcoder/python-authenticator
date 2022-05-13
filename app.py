@@ -14,10 +14,10 @@ env_config = dotenv_values(".env")
 app = Flask(__name__)
 
 app.secret_key = env_config["SECRET_KEY"]
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'py_geekprofile'
+app.config['MYSQL_HOST'] = env_config["MYSQL_HOST"]
+app.config['MYSQL_USER'] = env_config["MYSQL_USER"]
+app.config['MYSQL_PASSWORD'] = env_config["MYSQL_PASSWORD"]
+app.config['MYSQL_DB'] = env_config["MYSQL_DB"]
 
 mysql = MySQL(app)
 
